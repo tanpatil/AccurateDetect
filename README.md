@@ -4,7 +4,7 @@ https://accuratedetect.000webhostapp.com/
 
 
 #### Solutions/Applications:
-Create a Cancer Detecting ML Web App by applying deep learning neural networks to the Detect A dataset for early detection of cancer with high accuracy and specificity.
+Create a 'Cancer Detecting ML Web App' by applying deep learning neural networks to the 'Detect-A' dataset for early detection of cancer with high accuracy and specificity.
 
 ### ROC Curves
 ![image](https://github.com/tanpatil/AccurateDetect/blob/main/Data/Detect%20A/ROC%20Curve/1.png)
