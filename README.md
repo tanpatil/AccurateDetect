@@ -1,4 +1,4 @@
-#Website
+<h2>Website</h2>
 <br>
 https://accuratedetect.000webhostapp.com/
 
@@ -25,5 +25,5 @@ Create a 'Cancer Detecting ML Web App' by applying deep learning neural networks
 <p>Output - Open 'results.csv' in the 'Data/Detect A' folder</p>
  </br>
  
- ###Logo
+ <h2>Logo</h2>
 ![image](https://user-images.githubusercontent.com/89934290/137636057-ee032758-5d43-4cc0-878b-d113ad69df37.png)
