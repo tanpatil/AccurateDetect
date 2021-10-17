@@ -17,15 +17,15 @@ import os
 numpy.random.seed(7)
 
 #get complete data set
-filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Only Numbers (normal).csv')
+filename = os.path.join(os.getcwd(),'Data\\detect a\\Only Numbers (normal).csv')
 totalData = numpy.loadtxt(filename, delimiter=",")
 
 #randomly split data into train, validation, test
 #trainData, validationData, testData = getData(filename, 0.1, 0.2, False)
 
-'''filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Training Data.csv' )
+'''filename = os.path.join(os.getcwd(), '..', 'Data\\detect a\\Training Data.csv' )
 trainData = numpy.loadtxt(filename, delimiter=",")
-filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Test Data.csv')
+filename = os.path.join(os.getcwd(), '..', 'Data\\detect a\\Test Data.csv')
 testData = numpy.loadtxt(filename, delimiter=",")'''
 
 #split data
@@ -33,7 +33,7 @@ total = [totalData[:, 0:40], totalData[:, 41]]
 total[1] = np_utils.to_categorical(total[1])
 print(total[1])
 #create file to write in
-filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/CrossValidation/results.csv')
+filename = os.path.join(os.getcwd(), 'Data\\detect a\\CrossValidation\\results.csv')
 file = open(filename, 'w')
 
 average = 0

@@ -32,14 +32,14 @@ tempList = []
 
 
 #get normal data set
-filename = os.path.join(os.getcwd(),'Data\\CancerSEEK\\Cancers2\\Normal.csv')
+filename = os.path.join(os.getcwd(),'Data\\detect a\\Cancers2\\Normal.csv')
 normalData = numpy.loadtxt(filename, delimiter=",")
 
 fileNames = ['Breast', 'Colorectum', 'Liver', 'Lung', 'Ovary', 'Pancreas', 'UpperGI']
 cancerData = [[],[],[],[],[],[],[]]
 for j in range(7):
     #get cancer data set
-    nameOfFile = 'Data\\CancerSEEK\\Cancers2\\' + fileNames[j] + '.csv'
+    nameOfFile = 'Data\\detect a\\Cancers2\\' + fileNames[j] + '.csv'
     filename = os.path.join(os.getcwd(), nameOfFile)
     cancerData[j] = numpy.loadtxt(filename, delimiter=",")
 
@@ -53,7 +53,7 @@ for trainPositions, testPositions in kfold.split(normalData[:, 0:40], normalData
 valueList.append(tempList)
 
 #create file to write in
-filename = os.path.join(os.getcwd(), 'Data\\CancerSEEK\\CrossValidation\\billResults.csv')
+filename = os.path.join(os.getcwd(), 'Data\\detect a\\CrossValidation\\billResults.csv')
 file = open(filename, 'w')
 
 real = []

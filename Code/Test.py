@@ -14,15 +14,15 @@ import os
 numpy.random.seed(7)
 
 #get complete data set
-filename = os.path.join(os.getcwd(),'Data\\CancerSEEK\\Only Numbers (normal).csv')
+filename = os.path.join(os.getcwd(),'Data\\detect a\\Only Numbers (normal).csv')
 totalData = numpy.loadtxt(filename, delimiter=",")
 
 #randomly split data into train, validation, test
 #trainData, validationData, testData = getData(filename, 0.1, 0.2, False)
 
-'''filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Training Data.csv' )
+'''filename = os.path.join(os.getcwd(), '..', 'Data/detect a/Training Data.csv' )
 trainData = numpy.loadtxt(filename, delimiter=",")
-filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Test Data.csv')
+filename = os.path.join(os.getcwd(), '..', 'Data/detect a/Test Data.csv')
 testData = numpy.loadtxt(filename, delimiter=",")'''
 
 #split data
@@ -40,7 +40,7 @@ print(num)
 kfold = StratifiedKFold(n_splits=10, shuffle=True, random_state=7)
 
 #create file to write in
-filename = os.path.join(os.getcwd(),'Data\\CancerSEEK\\CrossValidation\\results.csv')
+filename = os.path.join(os.getcwd(),'Data\\detect a\\CrossValidation\\results.csv')
 file = open(filename, 'w')
 
 regularizer = [0, 0, 0.0025, 120] # first two are regularization
