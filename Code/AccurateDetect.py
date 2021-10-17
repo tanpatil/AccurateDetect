@@ -16,15 +16,15 @@ def main():
     numpy.random.seed(7)
 
     # get complete data set
-    filename = os.path.join(os.getcwd(), 'Data\\CancerSEEK\\Only Numbers (normal).csv')
+    filename = os.path.join(os.getcwd(), 'Data\\detect a\\Only Numbers (normal).csv')
     total_data = numpy.loadtxt(filename, delimiter=",")
 
     # randomly split data into train, validation, test
     #trainData, validationData, testData = getData(filename, 0.1, 0.2, False)
 
-    # filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Training Data.csv' )
+    # filename = os.path.join(os.getcwd(), '..', 'Data/detect a/Training Data.csv' )
     # trainData = numpy.loadtxt(filename, delimiter=",")
-    # filename = os.path.join(os.getcwd(), '..', 'Data/CancerSEEK/Test Data.csv')
+    # filename = os.path.join(os.getcwd(), '..', 'Data/detect a/Test Data.csv')
     # testData = numpy.loadtxt(filename, delimiter=",")
 
     # data, result, type, gender is in column 41
@@ -34,7 +34,7 @@ def main():
     kfold = StratifiedKFold(n_splits=10, shuffle=True, random_state=7)
 
     # create file to write in
-    filename = os.path.join(os.getcwd(),'Data\\CancerSEEK\\CrossValidation\\results.csv')
+    filename = os.path.join(os.getcwd(),'Data\\detect a\\CrossValidation\\results.csv')
     file = open(filename, 'w')
 
     regularizer = [0, 0.0005, 150, 0.96]  # first two are regularization
@@ -53,7 +53,7 @@ def main():
 
         model.compile(loss='binary_crossentropy',
                       optimizer='adam', metrics=['accuracy'])
-        # class_weight makes false positives less desirable
+        # class_weight makes false negatives less desirable
         model.fit(total[0][train], total[1][train], class_weight={0: 1, 1: 1},
                   epochs=regularizer[2], batch_size=32, verbose=0)
 
@@ -116,7 +116,7 @@ def main():
             line = str(real[count]) + "," + \
                 str(value) + "," + str(types[count])
             file.write(line + "\n")
-        print("false positives: " + str(temp_positive))
+        print("false negatives: " + str(temp_positive))
         accuracy /= len(rounded)
         print("real accuracy: " + str(accuracy) + "\n")
         average += accuracy
@@ -125,6 +125,6 @@ def main():
     file.close()
     print()
     print('The accuracy of the model is '+str((average*10)+10)+'%')
-    print('False Positives:',false_positive)
+    print('False negatives:',false_positive)
     print('Total number of datasets',len(total_data))
 main()
