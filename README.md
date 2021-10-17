@@ -1,9 +1,6 @@
 #Website
 https://accuratedetect.000webhostapp.com/
 
-#### Problem Statement
-Participants will be provided with a dataset containing COVID-19 infections in a city of area 400 square kilometres over a period of 240 days. Using this data, each team is expected to come up with innovative solutions using this dataset.
-
 #### Solutions/Applications:
 Create a Cancer Detecting ML Web App by applying deep learning neural networks to the Detect A dataset for early detection of cancer with high accuracy and specificity.
 
