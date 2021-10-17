@@ -8,7 +8,7 @@ Participants will be provided with a dataset containing COVID-19 infections in a
 Create a Cancer Detecting ML Web App by applying deep learning neural networks to the Detect A dataset for early detection of cancer with high accuracy and specificity.
 
 ### ROC Curves
-(https://github.com/tanpatil/AccurateDetect/blob/main/Data/Detect%20A/ROC%20Curve/1.png)
+![image](https://github.com/tanpatil/AccurateDetect/blob/main/Data/Detect%20A/ROC%20Curve/1.png)
 
 ### Detect-A Accuracy Comparision
 ![image](https://user-images.githubusercontent.com/89934290/137635753-08660989-f435-47ee-a525-5452a85e9295.png)
