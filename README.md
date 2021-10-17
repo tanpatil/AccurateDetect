@@ -3,7 +3,8 @@
 https://accuratedetect.000webhostapp.com/
 
 #Logo
-![image]((https://github.com/tanpatil/AccurateDetect/blob/main/accuratedetectlogo.png)
+![image](https://user-images.githubusercontent.com/89934290/137636057-ee032758-5d43-4cc0-878b-d113ad69df37.png)
+
 
 #### Solutions/Applications:
 Create a Cancer Detecting ML Web App by applying deep learning neural networks to the Detect A dataset for early detection of cancer with high accuracy and specificity.
