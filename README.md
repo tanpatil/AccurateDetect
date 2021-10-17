@@ -1,5 +1,7 @@
 # Thesis
 
+https://accuratedetect.000webhostapp.com/
+
 <h1>How to run</h1>
 <h2>Install TensorFlow and Keras</h2>
 <p>Install TensorFlow by following the instructions at <a href="https://www.tensorflow.org/install/">Install TensorFlow</a> and <a href="https://keras.io/#installation">Install Keras</a></p>
