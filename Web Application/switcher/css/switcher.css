@@ -1,0 +1,159 @@
+
+/* =====[ THEME SWITCHER ]======================================================================= */
+
+#switcher {
+    position: fixed;
+    top: 110px;
+    left: -273px;
+    width: 331px;
+    z-index: 1000;
+    transition: left 0.35s;
+    -webkit-transition: left 0.35s;
+    -moz-transition: left 0.35s;
+    -o-transition: left 0.35s;
+    -ms-transition: left 0.35s;
+}
+
+#switcher.open {
+    left: 0;
+}
+
+#switcher h2 {
+    position: relative;
+    margin-left: -5px;
+    border: solid 1px #168fd8;
+    border-radius: 5px;
+    padding: 16px 59px 16px 28px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px rgba(2, 3, 3, 0.1);
+    background-color: #038bda;
+    z-index: 1;
+    box-shadow: 1px 2px 2px rgba(2, 3, 3, 0.11), 1px 1px rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 1px 2px 2px rgba(2, 3, 3, 0.11), 1px 1px rgba(255, 255, 255, 0.3) inset;
+    background-image: linear-gradient(to top, #038bda 30%, #75c2ed);
+    background-image: -webkit-linear-gradient(bottom, #038bda 30%, #75c2ed);
+    background-image: -moz-linear-gradient(to top, #038bda 30%, #75c2ed);
+    background-image: -o-linear-gradient(to top, #038bda 30%, #75c2ed);
+    background-image: -ms-linear-gradient(to top, #038bda 30%, #75c2ed);
+}
+
+#switcher h2 .open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 57px;
+    background: url(../img/icon.png) no-repeat center center;
+    cursor: pointer;
+}
+
+#switcher ul {
+    display: none;
+    margin-right: 59px;
+    border: solid 1px #46545e;
+    border-top: none;
+    border-left: none;
+    font-size: 13px;
+    line-height: 15px;
+    color: #42454e;
+    background: #fff;
+}
+
+#switcher.open ul {
+    box-shadow: 0 0 6px rgba(0, 33, 70, 0.1), 0 7px 25px rgba(17, 38, 84, 0.4);
+    -webkit-box-shadow: 0 0 6px rgba(0, 33, 70, 0.1), 0 7px 25px rgba(17, 38, 84, 0.4);
+}
+
+#switcher li {
+    padding: 8px 27px 8px 25px;
+}
+
+#switcher .header {
+    border-bottom: 1px solid #d8ddee;
+    font-weight: bold;
+    background: #f8fbff;
+}
+
+#switcher .palette {
+    overflow: hidden;
+    padding: 11px 21px 4px 25px;
+}
+
+#switcher .palette a {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 6px 7px 0;
+    border: 1px solid #c2c7d7;
+    padding: 1px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition: border 0.25s;
+    -webkit-transition: border 0.25s;
+    -moz-transition: border 0.25s;
+    -o-transition: border 0.25s;
+    -ms-transition: border 0.25s;
+}
+
+#switcher .palette a:hover,
+#switcher .palette a.active {
+    border-color: #ff7e7e;
+}
+
+#switcher .palette .pattern {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+#switcher .palette .shade {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#switcher .switch {
+    overflow: hidden;
+    padding: 13px 20px 11px 25px;
+}
+
+#switcher .switch a {
+    display: block;
+    float: left;
+    border: 1px solid #d8ddee;
+    padding: 0 5px;
+    margin: 0 2px 2px 0;
+    font-weight: bold;
+    text-align: center;
+    color: #63737f;
+    min-width: 99px;
+    cursor: pointer;
+    transition: border 0.35s, background 0.35s;
+    -webkit-transition: border 0.35s, background 0.35s;
+    -moz-transition: border 0.35s, background 0.35s;
+    -o-transition: border 0.35s, background 0.35s;
+    -ms-transition: border 0.35s, background 0.35s;
+}
+
+#switcher .switch a:hover,
+#switcher .switch a.active {
+    border-color: #1594dd;
+    background: #1594dd;
+    color: #fff;
+}
+
+#switcher .switch a.active {
+    cursor: default;
+}
+
+#switcher .boxed {
+    display: none;
+}
